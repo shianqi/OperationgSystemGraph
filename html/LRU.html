@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>LRU 页面置换算法</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=0.8, user-scalable=0;" name="viewport">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vue.js"></script>
 </head>
 <body>
 <div class="main">
     <div id="main" class="main">
-        <h1 class="title">LRU(最进最久未使用) 置换算法<span><a class="back" href="../index.html">< 返回</a></span></h1>
+        <h1 class="title">LRU(最近最久未使用) 置换算法<span><a class="back" href="../index.html">< 返回</a></span></h1>
         <div class="body">
             <input class="input" type="number" v-model="message" v-on:keydown.enter="click()"/>
             <input class="input-button" type="button" value="ADD" v-on:click="click()">

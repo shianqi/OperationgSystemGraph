@@ -12,7 +12,6 @@ var LFU = new Vue({
                     text: this.message,
                     value: 524288,
                     sty: function () {
-
                         var list = this.value.toString(2).split('');
                         while (list.length < 20) {
                             list.splice(0, 0, '0');
