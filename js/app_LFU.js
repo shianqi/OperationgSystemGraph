@@ -39,7 +39,7 @@ var LFU = new Vue({
                     }
                 }.bind(this));
                 if(!res){
-                    var minNumer = 0;
+                    var minNubmer = 0;
                     if(this.items.length>3){
                         var min = 999;
                         var nMin = 524289;
@@ -47,16 +47,16 @@ var LFU = new Vue({
                             if(this.items[i].stack_val()<min){
                                 min = this.items[i].stack_val();
                                 nMin = this.items[i].value;
-                                minNumer = i;
+                                minNubmer = i;
                             }else if(this.items[i].stack_val()==min){
 
                                 if(this.items[i].value<nMin){
                                     nMin = this.items[i].value;
-                                    minNumer = i;
+                                    minNubmer = i;
                                 }
                             }
                         }
-                        this.items.splice(minNumer,1,obj);
+                        this.items.splice(minNubmer,1,obj);
                     }else{
                         this.items.push(obj);
                     }
