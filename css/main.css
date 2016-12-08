@@ -8,6 +8,29 @@ html,body{
     font-family: "Microsoft YaHei UI Light", Arial, serif;
 }
 
+.main_box{
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    display: -webkit-flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.back{
+    float: right;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back:hover{
+    color: #65b76f;
+}
+
+.main_box a{
+    text-decoration: none;
+}
+
 .body{
     background: #2f2f31;
     box-sizing: border-box;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIFO 页面置换算法</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div class="main">
+    <div id="main" class="main">
+        <h1 class="title">FIFO(先进先出) 页面置换算法 <span><a class="back" href="../index.html">< 返回</a></span></h1>
+        <div class="body">
+            <input class="input" type="number" v-model="message" v-on:keydown.enter="click()"/>
+            <input class="input-button" type="button" value="ADD" v-on:click="click()">
+        </div>
+        <div id="mainCh">
+            <div class="body" v-for="(item,index) in items">
+                <!--v-bind:style="{order:-item.stack_val()}"-->
+                <div class="number" v-bind:style="item.text">
+                    <p class="number-text">{{item.text}}</p>
+                </div>
+                <div class="stack">
+                    <div class="item" v-bind:class="{'item-black': index!=hand}"></div>
+                </div>
+                <div class="stack-val">
+                    <p class="number-text">{{item.value}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/app_FIFO.js"></script>
+</div>
+</body>
+</html>
